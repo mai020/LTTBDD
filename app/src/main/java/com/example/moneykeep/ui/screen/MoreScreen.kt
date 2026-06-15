@@ -186,7 +186,7 @@ fun MoreScreen(
                         title = "Hướng dẫn sử dụng",
                         iconColor = colorScheme.primary,
                         iconBg = colorScheme.primary.copy(alpha = 0.1f),
-                        onClick = { openPdfFromAssets(context, "hdsd.pdf") }
+                        onClick = { openPdfFromAssets(context, "HDSD.pdf") }
                     )
                     HorizontalDivider(modifier = Modifier.padding(horizontal = 20.dp), color = colorScheme.outlineVariant)
 

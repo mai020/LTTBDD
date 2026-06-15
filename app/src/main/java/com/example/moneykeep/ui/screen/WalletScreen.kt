@@ -173,18 +173,6 @@ fun WalletScreen(
                 }
             }
         }
-
-        // Error Dialog
-        uiState.errorMessage?.let { msg ->
-            AlertDialog(
-                onDismissRequest = { walletViewModel.clearError() },
-                icon = { Icon(Icons.Default.Warning, null, tint = colorScheme.error) },
-                title = { Text("Lỗi") },
-                text = { Text(msg) },
-                confirmButton = {
-                    TextButton(onClick = { walletViewModel.clearError() }) { Text("Đóng") }
-                }
-            )
-        }
     }
 }
+
