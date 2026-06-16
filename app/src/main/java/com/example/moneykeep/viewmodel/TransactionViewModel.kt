@@ -245,7 +245,7 @@ class TransactionViewModel(
                             _uiState.update {
                                 it.copy(
                                     isSaving = false,
-                                    errorMessage = "Ví \"${state.selectedWallet}\" không đủ số dư. Vui lòng nạp thêm tiền hoặc giảm số tiền chi."
+                                    errorMessage = "Ví \"${state.selectedWallet}\" không đủ số dư. Vui lòng chọn ví khác hoặc điều chỉnh số tiền chi."
                                 )
                             }
                             return@launch

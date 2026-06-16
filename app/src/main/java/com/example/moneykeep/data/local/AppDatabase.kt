@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [Transaction::class, Wallet::class, Category::class, UserSetting::class],
-    version = 8 // Tăng lên 8 để Room thực hiện cập nhật lại cấu trúc bảng mới
+    version = 8 // Phiên bản Database khi có thay đổi cấu trúc bảng
 )
 abstract class AppDatabase : RoomDatabase() {
 

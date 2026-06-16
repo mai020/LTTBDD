@@ -152,27 +152,6 @@ fun WalletScreen(
                 )
             }
         }
-
-        // Overlay Loading
-        if (uiState.isLoading || uiState.isSaving) {
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(Color.Black.copy(alpha = 0.3f)),
-                contentAlignment = Alignment.Center
-            ) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    CircularProgressIndicator(color = colorScheme.primary)
-                    Spacer(Modifier.height(12.dp))
-                    Text(
-                        "Đang xử lý dữ liệu...",
-                        color = Color.White,
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Medium
-                    )
-                }
-            }
-        }
     }
 }
 

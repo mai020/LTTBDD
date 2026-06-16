@@ -183,7 +183,7 @@ fun HomeScreen(
                     Spacer(modifier = Modifier.height(12.dp))
                     OutlinedTextField(
                         value = inputName, onValueChange = { inputName = it },
-                        singleLine = true, placeholder = { Text("Ví dụ: Minh") }
+                        singleLine = true, placeholder = { Text("Ví dụ: Nguyen Van A") }
                     )
                 }
             },
